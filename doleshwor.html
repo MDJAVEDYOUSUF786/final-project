@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaktapur</title>
+    <style>
+        body{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .mainbody{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffa500;
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+    }
+
+    .logo{
+      margin-left: 20px;
+      padding-left: 10px;
+      color: white;
+    }
+
+    .menu ul{
+      display: inline-flex;
+    }
+
+    .menu ul li{
+      list-style: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .menu ul li a{
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 900;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      transition: 0.5s;
+      text-transform: uppercase;
+    }
+
+    .menu ul li a:hover{
+      background-color: rgb(245, 214, 157, 0.5);
+    }
+
+    .photo{
+            width: 100%;
+            height: 500px;
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+
+        .photo img{
+            width: 100%;
+            height: auto;
+        }
+
+        .intro{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .content{
+            width: 50%;
+            height: 400px;
+            font-size: 15px;
+        }
+
+        p{
+            padding-right: 5px;
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .content iframe{
+            width: 100%;
+            height: 400px;
+            padding: 0px;
+        }
+
+        .container{
+            display: flex;
+            max-width: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container img{
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+            object-position: bottom;
+            padding: 5px;
+            margin: 5px;
+            transition: 0.3s;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+            border-radius: 5px;
+        }
+
+        .container img:hover{
+            cursor: pointer;
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        @media (max-width:819px){
+            .container img{
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 760px){
+            .photo{
+                height: auto;
+            }
+        }
+
+        @media (max-width:1277px){
+            .intro{
+                display: block;
+                justify-content: left;
+                align-items: left;
+            }
+            .content{
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width:650px){
+            .content{
+                margin: 0;
+                padding: 0;
+            }
+            .content iframe{
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <h2>Bhaktapur</h2>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="form.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="photo">
+        <img src="images/doleshwor/1.jpg">
+    </div>
+
+    <div class="mainbody">
+    <div class="heading">
+        <h1 style="font-family: 'Times New Roman', Times, serif;"> Doleshwor Mahadev Temple</h1>
+    </div>
+
+    <div class="intro">
+        <div class="content">
+            <p>Doleshwor Mahadev Temple is located in Nepal’s Bhaktapur district, 20 kilometres from Kathmandu. It takes about 30 minutes to drive from Kathmandu to Doleshwar. For all Shiva enthusiasts, a trip to Kedarnath is not complete unless they visit Doleshwor Mahadeva and Pashupatinath. A pilgrimage to these three sacred spots is thought to wash away all of one’s sins and provide an opportunity to receive heavenly blessings from Lord Shiva. Shree 1008 Jagat Guru Bheemashaankarling Shivacharya, the top priest of Kedarnath, officially designated Doleshwor Mahadev as the head of Kedarnath, one of the Char Dham Yatra, on August 22, 2009.
+    
+            For the last 4,000 years, the general population was unaware of the connection between Kedarnath and Doleshwor.
+
+            Looking back at Doleshwor Mahadev’s history, it is claimed that after the Mahabharata of Kurushetra, the Pandav brothers headed for the Himalayas in seek of Lord Shiva’s pardon for the deaths of many people during the conflict.
+
+            But, because Lord Shiva was unwilling to forgive them, he disguised himself as a bull. Knowing about Lord Shiva’s disguise as the fleeing bull, the Pandavas captured the tail of the bull, at which point the head of the bull became split from the remainder of the body.
+            </p>      
+        </div>
+        <div class="content">
+            <iframe src="https://www.youtube.com/embed/b9XC4v-c6V0"; allow="autoplay; loop; muted"></iframe>
+            <!--<video autoplay loop muted>
+                <source src="videos/api.mp4" type="video/mp4">
+            </video>-->
+        </div>
+    </div>
+
+        <h2 style="font-family: 'Times New Roman', Times, serif;">SOME PHOTOS</h2>
+        <div class="container">
+            <img src="images/doleshwor/2.jpg" alt="" srcset="">
+            <img src="images/doleshwor/3.jpg" alt="" srcset="">
+            <img src="images/doleshwor/4.jpg" alt="" srcset="">
+            <img src="images/doleshwor/5.jpg" alt="" srcset="">
+            <img src="images/doleshwor/6.jpg" alt="" srcset="">
+            <img src="images/doleshwor/7.jpg" alt="" srcset="">
+        </div>
+    </div>
+</body>
+</html>

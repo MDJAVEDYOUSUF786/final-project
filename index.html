@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhaktapur</title>
+  <style>
+    body{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffa500;
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+    }
+
+    .logo{
+      margin-left: 20px;
+      padding-left: 10px;
+      color: white;
+    }
+
+    .menu ul{
+      display: inline-flex;
+    }
+
+    .menu ul li{
+      list-style: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .menu ul li a{
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 900;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      transition: 0.5s;
+      text-transform: uppercase;
+    }
+
+    .menu ul li a:hover{
+      background-color: rgb(245, 214, 157, 0.5);
+    }
+
+    .video_box{
+      position: relative;
+      width: 100%;
+    }
+
+    .video_box h2{
+      position: absolute;
+      z-index: 1;
+      color: white;
+      bottom: 0;
+      left: 20%;
+      opacity: 0.3;
+    }
+
+    .video_box .video-container{
+      width: 100%;
+    }
+
+    .video_box .video-container video{
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 87vh;
+      object-fit: cover;
+    }
+
+    .heading-1{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+    }
+
+    .heading-1 .heading-box{
+      background-color: orange;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    .heading-1 h2{
+      color: white;
+      margin: 10px;
+      font-size: 28px;
+    }
+
+    .main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main .places{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 32px;
+    }
+
+    .places .flashcard{
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+      border: 16px solid #fff;
+      border-radius: 8px;
+      width: 400px;
+      height: 300px;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .places .flashcard:hover{
+      transform: scale(1.01);
+      opacity: 0.6;
+    }
+
+    .places .flashcard img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .places .flashcard .head{
+      position: absolute;
+      top: 45%;
+      left: 55px;
+      text-align: center;
+      padding: 5px;
+      opacity: 0.8;
+      color: white;
+      font-size: 28px;
+    }
+
+    .food{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      margin-left: 32px;
+    }
+
+    .food .cardboard{
+      width: 30%;
+      height: auto;
+      padding: 10px;
+      margin: 3px;
+      border-radius: 5px;
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .food .cardboard:hover{
+      opacity: 0.8;
+      transform: translateY(-10px);
+    }
+
+
+    .food .cardboard img{
+      width: 100%;
+      height: 50%;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h2>Bhaktapur</h2>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="form.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="video_box">
+    <div class="heading">
+      <h2>Video Source: https://www.youtube.com/watch?v=UGN2fgig1EY&t=55s</h2>
+    </div>
+    <div class="video-container">
+      <video src="videos/background_video.mp4" type="video/mp4" autoplay muted loop></video>
+    </div>
+  </div>
+  <div class="heading-1">
+    <div class="heading-box">
+      <h2>Famous Places To Visit</h2>
+    </div>
+  </div>
+
+  <div class="main">
+  <div class="places">
+    <div class="flashcard">
+      <a href="durbar.html">
+        <img src="images/durbar.jpg">
+        <div class="head">
+          <h4>Bhaktapur Durbar Square</h4>
+        </div>
+      </a>
+    </div>
+
+    <div class="flashcard">
+      <a href="changunarayan.html">
+        <img src="images/changunarayan.jpg">
+        <div class="head">
+          <h4>Changunarayan Temple</h4>
+        </div>
+      </a>
+    </div>
+
+    <div class="flashcard">
+      <a href="doleshwor.html">
+        <img src="images/doleshwor.jpg">
+        <div class="head">
+          <h4>Doleshwor Mahadev</h4>
+        </div>
+      </a>
+    </div>
+
+    <div class="flashcard">
+      <a href="pilot.html">
+        <img src="images/pilot_baba.jpg">
+        <div class="head">
+          <h4>Pilot Baba</h4>
+        </div>
+      </a>
+    </div>
+
+    <div class="flashcard">
+      <a href="tower.html">
+        <img src="images/view tower.jpg">
+        <div class="head">
+          <h4>Nagarkot View Tower</h4>
+        </div>
+      </a>
+    </div>
+
+    <div class="flashcard">
+      <a href="sanga.html">
+        <img src="images/sanga.jpg">
+        <div class="head">
+          <h4>Sanga Shiva Temple</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+    
+<div class="heading-1">
+  <div class="heading-box">
+    <h2>Top Cuisines</h2>
+  </div>
+</div>
+
+<div class="food">
+
+  <div class="cardboard">
+    <img src="images/food/juju.jpg">
+    <h3>JuJu Dhau</h3>
+    <p>Bhaktapur is famous for its amazing 'Juju Dhau', also known as 'King of Curds'. Juju Dhau is made of fresh buffalo milk and served in a small clay pot. You’ll easily find many shops and stalls selling Juju Dhau in Bhaktapur. Juju Dhau is from Bhaktapur and most of the shops sell great Juju dhau. </p>
+  </div>
+
+  <div class="cardboard">
+    <img src="images/food/samay.jpg">
+    <h3>Samay Baji</h3>
+    <p>Samay Baji, also known as ‘Newari Khaja set’, is probably the most famous Newari dish in Nepal. 
+
+    The Newari meal comprises a lot of different items, including beaten rice (chiura), soybeans (bhatamaas), boiled beans curry (bodi ko achar), spicy meat (choila), spicy potatoes spinach (saag), lentil pancake (bara), fried boiled egg, pickles (achaar), sliced ginger (aduwa), … Many other items can be added. Newa Lahana Khwopa is an authentic Newari restaurant. We had an epic Newari lunch at their main outlet in Kirtipur. The one in Bhaktapur didn’t disappoint. This restaurant is known for its amazing Samay Baji.</p>
+  </div>
+
+  <div class="cardboard">
+    <img src="images/food/choila.jpeg">
+    <h3>Choila</h3>
+    <p>Choila is a grilled meat (buffalo, mutton, chicken, or pork) that is known for its spiciness. The meat is blackened and crunchy on the outside and pink and tender inside. Then, the meat is marinated in a combination of spices.
+
+      Often served with Chhyang (a local alcoholic beverage made from fermented rice), this mouth-watering specialty is most of the time eaten as a snack. ‘Choila Specialist’ is one of the best places to try Choila in Bhaktapur. They serve amazing spicy buff choila. They are open since 30 years.</p>
+  </div>
+
+  <div class="cardboard">
+    <img src="images/food/yomari.jpg">
+    <h3>Yomari</h3>
+    <p>Yomari is a Newari delicacy that is very popular in Bhaktapur. It is a steamed rice dough filled with brown cane sugar, ghee and sesame seeds (chaku). We’ve also tried the other version with khuwa (condensed milk).
+
+      There is even a Newari festival named after the delicacy, ‘Yomari Punhi’, that marks the end of the rice harvest (December). Most of the eateries and restaurants in Bhaktapur serve Yomari. The best Yomari I had was at my friend family’s house in Bhaktapur. We had pretty good Yomaris at ‘Newari Kitchen’ and ‘Newa Lahana Khwopa’ in Bhaktapur. </p>
+  </div>
+
+  <div class="cardboard">
+    <img src="images/food/sekuwa.jpg">
+    <h3>Sekuwa</h3>
+    <p>Sekuwa is a traditional Nepali barbecued skewered meat. The best sekuwas are roasted directly over open fire. You can still find some eateries in Kathmandu that use this method. ‘Kancha Ram ko Batti Pasal’ serves great Sekuwa in Bhaktapur. It is a very famous eatery among locals in Bhaktapur.</p>
+  </div>
+
+  <div class="cardboard">
+    <img src="images/food/momo.jpg">
+    <h3>MoMo</h3>
+    <p> Momo is a dumpling made of all-purpose flour and filled with either meat or vegetables. The dish is a very popular Nepali street food. In Nepal the most common type of momos are buff (buffalo) momos followed by chicken. You can find best momos in the durbar square area, Jagati and around the durbar area.</p>
+  </div>
+
+</div>
+
+
+</body>
+</html>

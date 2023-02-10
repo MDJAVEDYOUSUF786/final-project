@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaktapur</title>
+    <style>
+        body{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffa500;
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+    }
+
+    .logo{
+      margin-left: 20px;
+      padding-left: 10px;
+      color: white;
+    }
+
+    .menu ul{
+      display: inline-flex;
+    }
+
+    .menu ul li{
+      list-style: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .menu ul li a{
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 900;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      transition: 0.5s;
+      text-transform: uppercase;
+    }
+
+    .menu ul li a:hover{
+      background-color: rgb(245, 214, 157, 0.5);
+    }
+
+    .form-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(images/background.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .form-container .form{
+        background-color: rgb(255, 255, 255, 0.3);
+        width: 20%;
+        height: 70vh;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .element input{
+        border-color: black;
+        border-width: 0.5px;
+        border-radius: 5px;
+        width: 100%;
+        background-color: rgb(255, 255, 255, 0.3);
+    }
+
+    .element textarea{
+        border-color: black;
+        border-width: 0.5px;
+        border-radius: 5px;
+        width: 100%;
+        background-color: rgb(255, 255, 255, 0.3);
+    }
+
+    .element button{
+        border-color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .element h3{
+        animation-name: sidebyside;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transition: 0.2;
+    }
+
+    button:hover{
+        opacity: 0.8;
+    }
+
+    @keyframes sidebyside{
+      0%{
+        transform: translate(-30px);
+      }
+
+      50%{
+        transform: translate(35px);
+      }
+
+      100%{
+        transform: translate(-30px);
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <h2>Bhaktapur</h2>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="form.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="form-container">
+        <div class="form">
+            <div class="element">
+              <h3>We Will Contact You!</h3>
+            </div>
+            <div class="element">
+                <label>Name</label><br/><input type="text"><br/>
+            </div>
+            <div class="element">
+                <label>Email</label><br/><input type="text"><br/>
+            </div>
+            <div class="element">
+            <label>Phone</label><br/><input type="text"><br/>
+            </div>  
+            <div class="element">
+            <label>Comment</label><br/><textarea name="comment" rows="8"></textarea><br/>
+            </div>
+            <div class="element">
+            <a href="form.html"><button type="submit">Submit</button></a>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaktapur</title>
+    <style>
+        body{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .mainbody{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffa500;
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+    }
+
+    .logo{
+      margin-left: 20px;
+      padding-left: 10px;
+      color: white;
+    }
+
+    .menu ul{
+      display: inline-flex;
+    }
+
+    .menu ul li{
+      list-style: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .menu ul li a{
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 900;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      transition: 0.5s;
+      text-transform: uppercase;
+    }
+
+    .menu ul li a:hover{
+      background-color: rgb(245, 214, 157, 0.5);
+    }
+
+    .photo{
+            width: 100%;
+            height: 500px;
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+
+        .photo img{
+            width: 100%;
+            height: auto;
+        }
+
+        .intro{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .content{
+            width: 50%;
+            height: 400px;
+            font-size: 15px;
+        }
+
+        p{
+            padding-right: 5px;
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .content iframe{
+            width: 100%;
+            height: 400px;
+            padding: 0px;
+        }
+
+        .container{
+            display: flex;
+            max-width: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container img{
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+            object-position: bottom;
+            padding: 5px;
+            margin: 5px;
+            transition: 0.3s;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+            border-radius: 5px;
+        }
+
+        .container img:hover{
+            cursor: pointer;
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        @media (max-width:819px){
+            .container img{
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 760px){
+            .photo{
+                height: auto;
+            }
+        }
+
+        @media (max-width:1277px){
+            .intro{
+                display: block;
+                justify-content: left;
+                align-items: left;
+            }
+            .content{
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width:650px){
+            .content{
+                margin: 0;
+                padding: 0;
+            }
+            .content iframe{
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <h2>Bhaktapur</h2>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="form.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="photo">
+        <img src="images/bhaktapur/1.jpg">
+    </div>
+
+    <div class="mainbody">
+    <div class="heading">
+        <h1 style="font-family: 'Times New Roman', Times, serif;"> Bhaktapur Durbar Square</h1>
+    </div>
+
+    <div class="intro">
+        <div class="content">
+            <p>Bhaktapur Durbar Square is a former royal palace complex located in Bhaktapur, Nepal. It housed the Malla kings of Nepal from 14th to 15th century and the kings of the Kingdom of Bhaktapur from 15th to late 18th century until the kingdom was conquered in 1769. Today, this square is recognised by UNESCO managed jointly by the Archeological Department of Nepal and Bhaktapur Municipality and is under heavy restoration due to the damages from the earthquake in 1934 and the recent earthquake of 2015.
+            <br/><br/>
+            The Durbar Square is a generic name for the Malla palace square and can be found in Kathmandu and Patan as well. The one in Bhaktapur was considered the biggest and the grandest among the three during its independency but now many of the buildings that once occupied the square has been lost to the frequent earthquakes. During its height, Bhaktapur Durbar Square contained 99 courtyards but today hardly 15 of these courtyards remain. The square has lost most of its buildings and courtyards to frequent earthquakes, particularly those in 1833 and 1934 and only a few of the damaged buildings were restored.
+            </p>      
+        </div>
+        <div class="content">
+            <iframe src="https://www.youtube.com/embed/5-Ou3y_RTQI"; allow="autoplay; loop; muted"></iframe>
+            <!--<video autoplay loop muted>
+                <source src="videos/api.mp4" type="video/mp4">
+            </video>-->
+        </div>
+    </div>
+
+        <h2 style="font-family: 'Times New Roman', Times, serif;">SOME PHOTOS</h2>
+        <div class="container">
+            <img src="images/bhaktapur/2.jpg" alt="" srcset="">
+            <img src="images/bhaktapur/3.jpg" alt="" srcset="">
+            <img src="images/bhaktapur/4.jpg" alt="" srcset="">
+            <img src="images/bhaktapur/5.jpg" alt="" srcset="">
+            <img src="images/bhaktapur/6.jpg" alt="" srcset="">
+            <img src="images/bhaktapur/7.jpg" alt="" srcset="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaktapur</title>
+    <style>
+        body{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .mainbody{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffa500;
+      width: 100%;
+      position: fixed;
+      z-index: 999;
+    }
+
+    .logo{
+      margin-left: 20px;
+      padding-left: 10px;
+      color: white;
+    }
+
+    .menu ul{
+      display: inline-flex;
+    }
+
+    .menu ul li{
+      list-style: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .menu ul li a{
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 900;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      transition: 0.5s;
+      text-transform: uppercase;
+    }
+
+    .menu ul li a:hover{
+      background-color: rgb(245, 214, 157, 0.5);
+    }
+
+    .photo{
+            width: 100%;
+            height: 500px;
+            margin-bottom: 5px;
+            overflow: hidden;
+        }
+
+        .photo img{
+            width: 100%;
+            height: auto;
+        }
+
+        .intro{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .content{
+            width: 50%;
+            height: 400px;
+            font-size: 15px;
+        }
+
+        p{
+            padding-right: 5px;
+            text-align: justify;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .content iframe{
+            width: 100%;
+            height: 400px;
+            padding: 0px;
+        }
+
+        .container{
+            display: flex;
+            max-width: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container img{
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+            object-position: bottom;
+            padding: 5px;
+            margin: 5px;
+            transition: 0.3s;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);
+            border-radius: 5px;
+        }
+
+        .container img:hover{
+            cursor: pointer;
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        @media (max-width:819px){
+            .container img{
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 760px){
+            .photo{
+                height: auto;
+            }
+        }
+
+        @media (max-width:1277px){
+            .intro{
+                display: block;
+                justify-content: left;
+                align-items: left;
+            }
+            .content{
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width:650px){
+            .content{
+                margin: 0;
+                padding: 0;
+            }
+            .content iframe{
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <h2>Bhaktapur</h2>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="form.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="photo">
+        <img src="images/nagarkot/4.jpg">
+    </div>
+
+    <div class="mainbody">
+    <div class="heading">
+        <h1 style="font-family: 'Times New Roman', Times, serif;"> Nagarkot</h1>
+    </div>
+
+    <div class="intro">
+        <div class="content">
+            <p>Nagarkot (Nepali: नगरकोट) is a former Village Development Committee located 32 km west of Kathmandu, Nepal in Bhaktapur District in Bagmati Province and as of 2015 part of Nagarkot Municipality. At the time of the 2011 census it had a population of 4,571 and had 973 houses in it. At an elevation of 2,195 meters, it is considered one of the most scenic spots in Bhaktapur District. It is known for a sunrise view of the Himalayas including Mount Everest as well as other peaks of the Himalayan range of eastern Nepal. Nagarkot also offers a panoramic view of the Kathmandu Valley.[3] The scenic beauty of the place makes it a very popular hiking route for tourists. It is located approximately 7000 ft (2000 m) above sea level and 28 km from Kathmandu International Airport. Nagarkot commands one of the broadest views of the Himalayas in the Kathmandu valley (8 Himalayan ranges of Nepal out of 13 from here). The ranges include Annapurna range, Manaslu range, Ganesh himal range, Langtang range, Jugal range, Rolwaling range, Mahalangur range (Everest range) and Numbur range with views of the Kathmandu valley and Shivapuri National Park.
+            </p>      
+        </div>
+        <div class="content">
+            <iframe src="https://www.youtube.com/embed/82QvdVtUmI0"; allow="autoplay; loop; muted"></iframe>
+            <!--<video autoplay loop muted>
+                <source src="videos/api.mp4" type="video/mp4">
+            </video>-->
+        </div>
+    </div>
+
+        <h2 style="font-family: 'Times New Roman', Times, serif;">SOME PHOTOS</h2>
+        <div class="container">
+            <img src="images/nagarkot/1.jpg" alt="" srcset="">
+            <img src="images/nagarkot/2.jpg" alt="" srcset="">
+            <img src="images/nagarkot/3.jpeg" alt="" srcset="">
+            <img src="images/nagarkot/5.jpg" alt="" srcset="">
+            <img src="images/nagarkot/6.jpg" alt="" srcset="">
+            <img src="images/nagarkot/7.jpg" alt="" srcset="">
+        </div>
+    </div>
+</body>
+</html>
